@@ -1,0 +1,76 @@
+
+GET http://localhost:3000/products/5b7e3c2a8ef6402b44c52666
+###
+
+GET http://localhost:3000/products/
+###
+
+GET http://localhost:3000/orders/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IkFwcGxlQGFwcGxlLmNvbSIsInVzZXJJZCI6IjViN2U5NDA1N2ZjNzJjMGY0NDU2NDdiNSIsImlhdCI6MTUzNTA3MjAwNywiZXhwIjoxNTM1MDc1NjA3fQ.Q6LIjaLDKo9Czy558-21NXz7L9FKlQSEOUYS2dgQHWc
+###
+GET http://localhost:3000/orders/5b7e4982f8b7841f0c57a261
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IkFwcGxlQGFwcGxlLmNvbSIsInVzZXJJZCI6IjViN2U5NDA1N2ZjNzJjMGY0NDU2NDdiNSIsImlhdCI6MTUzNTA3MjAwNywiZXhwIjoxNTM1MDc1NjA3fQ.Q6LIjaLDKo9Czy558-21NXz7L9FKlQSEOUYS2dgQHWc
+###
+
+GET http://localhost:3000/orders/5b7e4982f8b7841f0c57a261
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IkFwcGxlQGFwcGxlLmNvbSIsInVzZXJJZCI6IjViN2U5NDA1N2ZjNzJjMGY0NDU2NDdiNSIsImlhdCI6MTUzNTA3MjAwNywiZXhwIjoxNTM1MDc1NjA3fQ.Q6LIjaLDKo9Czy558-21NXz7L9FKlQSEOUYS2dgQHWc
+###
+POST http://localhost:3000/orders/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IkFwcGxlQGFwcGxlLmNvbSIsInVzZXJJZCI6IjViN2U5NDA1N2ZjNzJjMGY0NDU2NDdiNSIsImlhdCI6MTUzNTA3MjAwNywiZXhwIjoxNTM1MDc1NjA3fQ.Q6LIjaLDKo9Czy558-21NXz7L9FKlQSEOUYS2dgQHWc
+
+{
+  "productId": "5b7e80f59146923044d2530c",
+  "quantity": 7
+}
+
+###
+
+POST http://localhost:3000/products
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IkFwcGxlQGFwcGxlLmNvbSIsInVzZXJJZCI6IjViN2U5NDA1N2ZjNzJjMGY0NDU2NDdiNSIsImlhdCI6MTUzNTA3MjAwNywiZXhwIjoxNTM1MDc1NjA3fQ.Q6LIjaLDKo9Czy558-21NXz7L9FKlQSEOUYS2dgQHWc
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="product"
+Content-Type: application/json
+
+{
+  "name": "Apple",
+  "price": "199"
+}
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="productImage"; filename="flower.jpeg"
+Content-Type: image/jpeg
+
+< ./flower.jpeg
+------WebKitFormBoundary7MA4YWxkTrZu0gW--
+
+###
+
+DELETE http://localhost:3000/orders/5b7e4981f8b7841f0c57a260
+
+
+###
+
+POST http://localhost:3000/user/signup
+Content-Type: application/json
+
+{
+  "email": "Apple@apple.com",
+  "password": "199",
+}
+
+###
+
+POST http://localhost:3000/user/login
+Content-Type: application/json
+
+{
+  "email": "Apple@apple.com",
+  "password": "199"
+}
+
+###
+
+DELETE http://localhost:3000/user/5b7e91b0a9bd6513b4e44470
