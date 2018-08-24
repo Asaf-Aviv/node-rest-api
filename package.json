@@ -1,11 +1,11 @@
 {
-  "name": "node-rest",
+  "name": "node-rest-api",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "scripts": {},
   "keywords": [],
-  "author": "",
+  "author": "Asaf Aviv",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^3.0.0",
